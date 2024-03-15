@@ -1,0 +1,32 @@
+---
+import Navbar from "../components/Navbar.jsx";
+import Hero from "../components/Hero.jsx";
+import Footer from "../components/Footer.jsx";
+import "bootstrap/dist/css/bootstrap.min.css";
+interface Props {
+  tituloPagina?: string;
+}
+const { tituloPagina } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../../public//images/logo.png" />
+    <title>Educational Web | {tituloPagina}</title>
+  </head>
+  <body>
+    <Navbar client:load />
+    <Hero />
+    <slot />
+    <Footer />
+  </body>
+  <style>
+    body {
+      background-color: rgb(46, 30, 8);
+      color: white;
+    }
+  </style>
+</html>
