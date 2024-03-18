@@ -1,0 +1,27 @@
+.container__cardsStudents {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.students__cards {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 15px;
+  p {
+    font-size: 0.9rem;
+    margin-left: 5px;
+    margin-top: 11px;
+  }
+}
+
+.container__cardsStudents img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

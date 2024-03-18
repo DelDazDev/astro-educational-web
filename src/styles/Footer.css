@@ -1,0 +1,49 @@
+.footer__container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: green;
+  color: white;
+}
+
+.footer__container1 {
+  width: 100%;
+  display: flex;
+}
+
+.footer__container2 {
+  width: 100%;
+  display: flex;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px;
+}
+
+
+
+.footer__container a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.footer__about p{
+  color: white;
+  width: 90%;
+  font-size: 0.8rem;
+}
+.footer__icons {
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+  .footer__container {
+    flex-direction: column;
+  }
+}

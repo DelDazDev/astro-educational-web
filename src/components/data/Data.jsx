@@ -54,3 +54,31 @@ export const courses = [
     students: "+400 Studenst",
   },
 ];
+
+
+export const students = [
+  {
+    imagen: "../../public/images/profile-1.png",
+    texto: "That was best course for me."
+  },
+  {
+    imagen: "../../public/images/profile-2.png",
+    texto: "That was best course for me."
+  },
+  {
+    imagen: "../../public/images/profile-3.png",
+    texto: "That was best course for me."
+  },
+  {
+    imagen: "../../public/images/profile-2.png",
+    texto: "That was best course for me."
+  },
+  {
+    imagen: "../../public/images/profile-3.png",
+    texto: "That was best course for me."
+  },
+  {
+    imagen: "../../public/images/profile-1.png",
+    texto: "That was best course for me."
+  },
+]

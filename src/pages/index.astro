@@ -1,15 +1,81 @@
 ---
 import Layout from "../components/Layout.astro";
 import Cards from "../components/Cards.jsx";
+import StudentsComments from "../components/StudentsComments";
 ---
 
 <Layout tituloPagina="Home">
-  <h1>Home</h1>
-  <Cards />
+  <section>
+    <h2>Popular Courses</h2>
+    <div class="container__courses">
+      <Cards />
+    </div>
+  </section>
+  <section class="section__students">
+    <h2>Students Comments</h2>
+    <div class="container__students">
+      <div class="container__studentsDescription">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          exercitationem repellendus, dignissimos voluptates doloremque
+          consequuntur fuga animi saepe ea assumenda?
+        </p>
+      </div>
+      <div class="container__studentsComments">
+        <StudentsComments />
+      </div>
+    </div>
+  </section>
 
   <style>
-    h1 {
-      color: white;
+    body {
+      background-color: rgb(237, 238, 239);
+    }
+    section {
+      width: 100%;
+      margin-top: 25px;
+      background-color: rgb(237, 238, 239);
+    }
+
+    .container__courses {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .container__students {
+      width: 95%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+    }
+
+    .container__students .container__studentsDescription {
+      width: 35%;
+      p {
+        font-size: 0.8rem;
+      }
+    }
+
+    .container__studentsComments {
+      width: 65%;
+    }
+    h2 {
+      color: black;
+      padding-left: 2rem;
+      font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+      .container__students {
+        flex-direction: column;
+        align-items: center;
+      }
+      .container__students .container__studentsDescription {
+        width: 100%;
+      }
+      .container__students .container__studentsComments {
+        width: 100%;
+      }
     }
   </style>
 </Layout>
