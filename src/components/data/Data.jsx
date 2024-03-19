@@ -81,4 +81,57 @@ export const students = [
     imagen: "../../public/images/profile-1.png",
     texto: "That was best course for me."
   },
+];
+
+export const podcasts = [
+  {
+    imgAuriculares: "../../public/images/auriculares.jpg",
+    titulo: "Learn Coding",
+    fecha: "10 aug 2024",
+    listened: "Listened 100 times",
+    play: "../../public/images/play.png",
+    time: "01:02:10",
+    oyentes: "+210 Listeners"
+  },
+  {
+    imgAuriculares: "../../public/images/auriculares.jpg",
+    titulo: "Learn Coding",
+    fecha: "10 aug 2024",
+    listened: "Listened 100 times",
+    play: "../../public/images/play.png",
+    time: "01:02:10",
+    oyentes: "+210 Listeners"
+  },
+  {
+    imgAuriculares: "../../public/images/auriculares.jpg",
+    titulo: "Learn Coding",
+    fecha: "10 aug 2024",
+    listened: "Listened 100 times",
+    play: "../../public/images/play.png",
+    time: "01:02:10",
+    oyentes: "+210 Listeners"
+  }
+]
+
+export const articles = [
+  {
+    imgArticle:"../../public/images/art-1.jpg",
+    tituloArticle: "What is unique brand?",
+    vistas: "+420 Views",
+  },
+  {
+    imgArticle:"../../public/images/art-2.jpg",
+    tituloArticle: "What is unique brand?",
+    vistas: "+420 Views",
+  },
+  {
+    imgArticle:"../../public/images/art-3.jpg",
+    tituloArticle: "What is unique brand?",
+    vistas: "+420 Views",
+  },
+  {
+    imgArticle:"../../public/images/art-4.jpg",
+    tituloArticle: "What is unique brand?",
+    vistas: "+420 Views",
+  },
 ]

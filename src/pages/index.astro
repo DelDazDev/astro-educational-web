@@ -2,6 +2,8 @@
 import Layout from "../components/Layout.astro";
 import Cards from "../components/Cards.jsx";
 import StudentsComments from "../components/StudentsComments";
+import Podcasts from "../components/Podcasts";
+import Articles from "../components/Articles.jsx";
 ---
 
 <Layout tituloPagina="Home">
@@ -26,6 +28,18 @@ import StudentsComments from "../components/StudentsComments";
       </div>
     </div>
   </section>
+  <section class="section__podcats">
+    <h2>Weekly Contact</h2>
+    <div class="container__podcasts">
+      <Podcasts />
+    </div>
+  </section>
+  <section class="section__articles">
+    <h2>Blog Articles</h2>
+    <div class="container__articles">
+      <Articles />
+    </div>
+  </section>
 
   <style>
     body {
@@ -36,15 +50,21 @@ import StudentsComments from "../components/StudentsComments";
       margin-top: 25px;
       background-color: rgb(237, 238, 239);
     }
+    h2 {
+      color: black;
+      padding-left: 2rem;
+      font-size: 1.4rem;
+      margin-top: 10px;
+    }
 
     .container__courses {
       width: 90%;
-      margin: 0 auto;
+      margin: 15px auto;
     }
 
     .container__students {
       width: 95%;
-      margin: 0 auto;
+      margin: 15px auto;
       display: flex;
       align-items: center;
     }
@@ -59,10 +79,15 @@ import StudentsComments from "../components/StudentsComments";
     .container__studentsComments {
       width: 65%;
     }
-    h2 {
-      color: black;
-      padding-left: 2rem;
-      font-size: 1.4rem;
+
+    .container__podcasts {
+      width: 95%;
+      margin: 15px auto;
+    }
+
+    .container__articles {
+      width: 92%;
+      margin: 15px auto;
     }
 
     @media screen and (max-width: 1200px) {
