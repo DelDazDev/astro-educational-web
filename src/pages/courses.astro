@@ -1,7 +1,31 @@
 ---
+import Cards from "../components/Cards";
 import Layout from "../components/Layout.astro";
 ---
 
 <Layout tituloPagina="Courses">
-  <h2>Courses</h2>
+  <section class="section__courses">
+    <h2>Popular Courses</h2>
+    <div class="container__courses">
+      <Cards />
+    </div>
+  </section>
+
+  <style>
+    .section__courses {
+      background-color: rgb(237, 238, 239);
+    }
+    h2 {
+      color: black;
+      padding-left: 2rem;
+      font-size: 1.4rem;
+      margin-top: 10px;
+    }
+
+    .container__courses {
+      width: 90%;
+      margin: 15px auto;
+      margin-bottom: 30px;
+    }
+  </style>
 </Layout>

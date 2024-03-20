@@ -1,8 +1,70 @@
 ---
 import Layout from "../components/Layout.astro";
+import StudentsComments from "../components/StudentsComments";
 ---
 
 <Layout tituloPagina="Articles">
-  <h2>Articles</h2>
-  <div></div>
+  <section class="section__articles">
+    <h2>Studenst Comments</h2>
+    <div class="container__students">
+      <div class="container__studentsDescription">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          exercitationem repellendus, dignissimos voluptates doloremque
+          consequuntur fuga animi saepe ea assumenda?
+        </p>
+      </div>
+      <div class="container__articles">
+        <StudentsComments />
+      </div>
+    </div>
+
+    <style>
+      .section__articles {
+        background-color: rgb(237, 238, 239);
+      }
+      .container__students {
+        width: 95%;
+        margin: 15px auto;
+        display: flex;
+        align-items: center;
+      }
+
+      .container__students .container__studentsDescription {
+        width: 35%;
+        p {
+          font-size: 0.8rem;
+        }
+      }
+
+      .container__studentsComments {
+        width: 65%;
+      }
+      h2 {
+        color: black;
+        padding-left: 2rem;
+        font-size: 1.4rem;
+        margin-top: 10px;
+      }
+
+      .container__articles {
+        width: 90%;
+        margin: 15px auto;
+        margin-bottom: 30px;
+      }
+
+      @media screen and (max-width: 1200px) {
+        .container__students {
+          flex-direction: column;
+          align-items: center;
+        }
+        .container__students .container__studentsDescription {
+          width: 100%;
+        }
+        .container__students .container__studentsComments {
+          width: 100%;
+        }
+      }
+    </style>
+  </section>
 </Layout>

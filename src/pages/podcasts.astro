@@ -1,7 +1,30 @@
 ---
 import Layout from "../components/Layout.astro";
+import Podcasts from "../components/Podcasts";
 ---
 
 <Layout tituloPagina="Podcats">
-  <h2>Podcast</h2>
+  <section class="section__podcats">
+    <h2>Weekly Contact</h2>
+    <div class="container__podcasts">
+      <Podcasts />
+    </div>
+  </section>
+
+  <style>
+    .section__podcats {
+      background-color: rgb(237, 238, 239);
+    }
+    .container__podcasts {
+      width: 95%;
+      margin: 15px auto;
+    }
+
+    h2 {
+      color: black;
+      padding-left: 2rem;
+      font-size: 1.4rem;
+      margin-top: 10px;
+    }
+  </style>
 </Layout>

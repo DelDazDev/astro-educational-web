@@ -1,7 +1,69 @@
 ---
 import Layout from "../components/Layout.astro";
+import Formulario from "../components/Formulario";
 ---
 
 <Layout tituloPagina="Contact">
-  <h2>Contact</h2>
+  <section class="section__formulario">
+    <div class="container__section">
+      <div class="container__texto">
+        <h1>Learn to code by<br /> watching others</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima veniam
+          maxime sed animi natus, et quos assumenda culpa in! Autem.
+        </p>
+      </div>
+      <Formulario />
+    </div>
+  </section>
+
+  <style>
+    .section__formulario {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      background-color: rgb(78, 53, 53);
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 3rem;
+      z-index: -1;
+    }
+
+    .container__section {
+      width: 100%;
+      display: flex;
+    }
+
+    .container__texto {
+      width: 50%;
+    }
+
+    .container__texto p {
+      width: 70%;
+      font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 700px) {
+      .section__formulario {
+        width: 100%;
+        box-sizing: inherit;
+        flex-direction: column;
+      }
+
+      .container__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .container__texto {
+        width: 100%;
+        text-align: center;
+      }
+      .container__texto p {
+        width: 100%;
+      }
+    }
+  </style>
 </Layout>

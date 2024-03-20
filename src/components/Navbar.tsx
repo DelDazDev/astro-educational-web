@@ -63,9 +63,6 @@ const Navbar = () => {
           </ul>
         </nav>
         <div className="icon__header">
-          <p>🐒</p>
-          <p>👻</p>
-          <p>🍔</p>
           <p onClick={() => setOpen(!open)} className="close__navMovil">
             ❌
           </p>
